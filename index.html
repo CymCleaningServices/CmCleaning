@@ -912,7 +912,7 @@
             <div class="contact-card-icon cci-green">✉️</div>
             <div>
               <h4>Email</h4>
-              <p><a href="mailto:Cymcleaningservices@gmail.com" style="color:var(--navy);text-decoration:none;">Cymcleaningservices@gmail.com</a></p>
+              <p><a href="/cdn-cgi/l/email-protection#94d7edf9f7f8f1f5fafdfaf3e7f1e6e2fdf7f1e7d4f3f9f5fdf8baf7fbf9" style="color:var(--navy);text-decoration:none;"><span class="__cf_email__" data-cfemail="94d7edf9f7f8f1f5fafdfaf3e7f1e6e2fdf7f1e7d4f3f9f5fdf8baf7fbf9">[email&#160;protected]</span></a></p>
               <p style="display:none;"><a href="/cdn-cgi/l/email-protection#7f3c06121c131a1e111611180c1a0d09161c1a0c3f18121e1613511c1012"><span class="__cf_email__" data-cfemail="befdc7d3ddd2dbdfd0d7d0d9cddbccc8d7dddbcdfed9d3dfd7d290ddd1d3">[email&#160;protected]</span></a></p>
             </div>
           </div>
@@ -951,10 +951,12 @@
       <div class="contact-form reveal">
         <h3>Request a Free Quote</h3>
         <p>Fill out the form and we'll get back to you within 24 hours.</p>
-        <form id="contactForm" onsubmit="handleSubmit(event)" action="https://formspree.io/f/xaqpagpy" method="POST">
-          <!-- Formspree hidden redirect -->
-          <input type="hidden" name="_subject" value="New Quote Request — C&M Cleaning Services">
-          <input type="hidden" name="_replyto" value="">
+        <form id="contactForm" onsubmit="handleSubmit(event)" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms required fields -->
+          <input type="hidden" name="access_key" value="b6e28a4e-89f7-43e9-abca-e89e87d3bd18">
+          <input type="hidden" name="subject" value="New Quote Request — C&amp;M Cleaning Services LLC">
+          <input type="hidden" name="from_name" value="C&amp;M Cleaning Website">
+          <input type="hidden" name="redirect" value="false">
           <div class="form-row">
             <div class="form-group">
               <label>First Name</label>
@@ -1102,7 +1104,7 @@
 <!-- TOAST -->
 <div class="toast" id="toast">✅ Message sent! We'll be in touch soon.</div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Navbar scroll effect
   window.addEventListener('scroll', () => {
     document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 20);
@@ -1143,14 +1145,4 @@
         throw new Error('Form submission failed');
       }
     } catch(err) {
-      toast.textContent = '❌ Something went wrong. Please call us at (253) 737-4603';
-      toast.className = 'toast show';
-    }
-
-    btn.textContent = "✉️ Send Request — We'll Call You Back!";
-    btn.disabled = false;
-    setTimeout(() => toast.className = 'toast', 5000);
-  }
-</script>
-</body>
-</html>
+      toast.textContent = '❌ Something went wron
